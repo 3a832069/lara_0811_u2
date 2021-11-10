@@ -28,4 +28,6 @@ Route::get('r1', function() {
 Route::get('r2', function() {
     return view('welcome');
 });
-
+Route::get('hello/{name}',function($name){
+    return'Hello,'.$name;
+});
